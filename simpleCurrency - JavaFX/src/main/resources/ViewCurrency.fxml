@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ControllerCurrency"
+            prefHeight="400.0" prefWidth="600.0">
+    <GridPane hgap="3" vgap="3">
+        <Label text="Currency Converter"/>
+        <TextField fx:id="fromField" GridPane.rowIndex="1"/>
+        <TextField fx:id="toField" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="fromCurr" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <ComboBox fx:id="toCurr" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button text="Convert" GridPane.rowIndex="3" onAction="#convertAction" />
+        <Button text="Exit" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#quitApplication" />
+    </GridPane>
+
+</AnchorPane>
