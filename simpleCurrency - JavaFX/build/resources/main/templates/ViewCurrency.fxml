@@ -16,7 +16,7 @@
         <TextField fx:id="toField" GridPane.rowIndex="2"/>
         <ComboBox fx:id="fromCurr" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
         <ComboBox fx:id="toCurr" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
-        <Button text="Convert" GridPane.rowIndex="3" onAction="#convertAction" />
+        <Button text="Update Rates" GridPane.rowIndex="3" onAction="#updateRates" />
         <Button text="Exit" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#quitApplication" />
     </GridPane>
 

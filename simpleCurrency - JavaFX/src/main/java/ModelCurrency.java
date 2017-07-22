@@ -1,6 +1,5 @@
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -9,12 +8,13 @@ import java.util.HashMap;
 public class ModelCurrency {
 
     public static final ArrayList<String> CURRENCIES;
+
     static {
         CURRENCIES = new ArrayList<>();
         CURRENCIES.add("AUD");
         CURRENCIES.add("USD");
         CURRENCIES.add("NZD");
-    };
+    }
 
     private HashMap<String, Double> exchangeRates;
     private BigDecimal currExch = new BigDecimal(1);
@@ -37,5 +37,28 @@ public class ModelCurrency {
 
     public BigDecimal getExchangeRate() {
         return currExch;
+    }
+
+    public void loadCurrencies() {
+
+    }
+
+    private void saveCurrencies() {
+
+    }
+
+    public void enquireCurrentRates() {
+//            CurrencyLayerConnector.enquireAPI();
+        /* pseudo-code (or Python)
+
+        Call CurrencyLayer
+        If HashMap:
+            replace old HashMap
+            replace text file data
+        else:
+            Bad
+
+
+         */
     }
 }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simpleCurrency - JavaFX.iml" filepath="$PROJECT_DIR$/.idea/modules/simpleCurrency - JavaFX.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_main.iml" filepath="$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_main.iml" group="simpleCurrency - JavaFX" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_test.iml" filepath="$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_test.iml" group="simpleCurrency - JavaFX" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX.iml" filepath="$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_main.iml" filepath="$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_main.iml" group="simpleCurrency_-_JavaFX" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_test.iml" filepath="$PROJECT_DIR$/.idea/modules/simpleCurrency_-_JavaFX_test.iml" group="simpleCurrency_-_JavaFX" />
     </modules>
   </component>
 </project>
