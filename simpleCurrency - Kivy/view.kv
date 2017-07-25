@@ -1,0 +1,50 @@
+#:kivy 1.0.9
+
+<calcView>:
+    in_curr: in_curr
+    out_curr: out_curr
+    update_btn: update_btn
+    in_choose: in_choose
+    out_choose: out_choose
+
+    Label:
+        size: 275, 50
+        text: "Currency Converter"
+        top: root.top
+
+    TextInput:
+        id: in_curr
+        size: 400, 50
+        top: root.top - 50
+
+    TextInput:
+        id: out_curr
+        size: 400, 50
+        top: root.top - 100
+
+    Button:
+        id: update_btn
+        text: "Update Rates"
+        top: root.top - 150
+        size: 200, 80
+
+    Button:
+        text: "Exit"
+        pos: 200, 0
+        top: root.top - 150
+        size: 100, 80
+        on_release: app.stop()
+
+
+    Spinner:
+        id: in_choose
+        top: root.top - 50
+        pos: 400, 0
+        size: 100, 50
+        values: root.currencies
+
+    Spinner:
+        id: out_choose
+        top: root.top - 100
+        pos: 400, 0
+        size: 100, 50
