@@ -1,4 +1,5 @@
 import kivy
+import externalInterface as ext
 
 kivy.require('1.9.0')
 
@@ -17,8 +18,11 @@ class calcView(Widget):
     out_choose = ObjectProperty(None)
 
     def __init__(self, **kwargs):
-        self.currencies = ['AUD', 'USD', 'NZD']
+        # self.currencies = ['AUD', 'USD', 'NZD']
+        self.currencies = ext.get_currencies()
         super(calcView, self).__init__(**kwargs)
+        # self.in_curr.text = "Hello"
+        # self.in_choose.text = "Bye"
 
 
 
