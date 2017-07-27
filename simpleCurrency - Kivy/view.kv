@@ -1,4 +1,5 @@
 #:kivy 1.0.9
+# Acts as the view of the program
 
 <calcView>:
     in_curr: in_curr
@@ -27,6 +28,7 @@
         text: "Update Rates"
         top: root.top - 150
         size: 200, 80
+        on_release: root.update_rates()
 
     Button:
         text: "Exit"

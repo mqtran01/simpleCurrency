@@ -7,7 +7,7 @@ def get_currencies():
         currencies = []
         with open('./data/currencies.txt', 'r') as file:
             for line in file:
-                data = line.split('=')
+                data = line.split('|')
                 if len(data[0]) != 3:
                     continue
                 currencies.append(data[0])
@@ -18,7 +18,7 @@ def get_currencies():
     return currencies
 
 
-def connect_cl():
+def update_cl(first='USD', second='USD'):
     # Using urllib, can try requests after
     url = 'http://www.apilayer.net/api/live'
     access_key = '7ce86ab4c16f464ad90e91a858ae6977'
@@ -30,14 +30,18 @@ def connect_cl():
         print(data)
         json_map = json.loads(data)
         print(json_map['quotes'])
-        with open('./data/rates.txt', 'w') as file:
+        with open('./data/currencies.txt', 'w') as file:
             file.write('timestamp=' + str(json_map['timestamp']) + '\n')
             for key in json_map['quotes']:
-                file.write(key[3:] + '=' + str(json_map['quotes'][key]) + '\n')
+                file.write(key[3:] + '|' + str(json_map['quotes'][key]) + '\n')
 
+        in_curr = json_map['quotes'][first]
+        out_curr = json_map['quotes'][second]
+        return in_curr, out_curr
     else:
         print("Nope")
+    return None, None
 
 
 if __name__ == '__main__':
-    connect_cl()
+    update_cl()
